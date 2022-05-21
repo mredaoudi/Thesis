@@ -1,0 +1,12 @@
+# Training & Processing
+flask
+tweepy
+requests
+
+# Analysis & Classification
+jupyter
+pandas
+nltk
+scikit-learn
+vaderSentiment-fr
+

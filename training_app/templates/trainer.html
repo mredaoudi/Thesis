@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Model Training: Trainer</title>
+        <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+        <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+
+            .container {
+              max-width: 70%;
+            }
+        </style>
+        <link href="{{ url_for('static', filename='navbar-top-fixed.css') }}" rel="stylesheet">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Training Model</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page">Trainer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/list">Processed tweets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <main class="container">
+          <div id="alert_finished" class="alert alert-primary align-items-center" role="alert">
+              No more tweets
+          </div>
+          <div id="tweet" class="card text-center">
+            <div id="card_header" class="card-header" >
+              <a id="tlink" href="" target="_blank"></a>
+            </div>
+            <div id="card_body" class="card-body">
+              <p id="ttext" class="card-text"></p>
+              <div>
+                <a id="posButton" onclick="submitLabel('pos')" class="btn btn-success me-2 btn-lg">Positive</a>
+                <a id="neuButton" onclick="submitLabel('neu')" class="btn btn-secondary me-2 btn-lg">Neutral</a>
+                <a id="negButton" onclick="submitLabel('neg')" class="btn btn-danger btn-lg me-2">Negative</a>
+                <a id="delButton" onclick="submitLabel('delete')" class="btn btn-warning btn-lg">Delete</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div id="spin" class="spinner-border m-5" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <h3 id="tweet_counter" class="text-center mt-5 border bg-light border-secondary rounded p-3 w-25 text-secondary">0</h3>
+          </div>
+        </main>
+        <script src="{{url_for('static', filename='trainer.js')}}"></script>
+    </body>
+</html>

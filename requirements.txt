@@ -13,4 +13,4 @@ seaborn
 nltk
 scikit-learn
 vaderSentiment-fr
-
+textblob-fr

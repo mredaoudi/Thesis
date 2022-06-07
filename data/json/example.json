@@ -1,0 +1,41 @@
+{
+    "2468013579246801357" : {
+        "tweet_data": {
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 81,
+                        "end": 93,
+                        "username": "Candidat_063",
+                        "id": "1122334455667788990"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 54,
+                        "end": 69,
+                        "tag": "présidentielles2022"
+                    },
+                    {
+                        "start": 70,
+                        "end": 79,
+                        "tag": "Candidat"
+                    }
+                ]
+            },
+            "id": "2468013579246801357",
+            "created_at": "2022-03-28T13:10:24.000Z",
+            "author_id": "1234567890987654321",
+            "text": "Les femmes sont avec vous, monsieur le candidat! \ud83c\uddf2\ud83c\uddeb #présidentielles2022 #Candidat @Candidat_063",
+            "source": "Twitter for Android"
+        },
+        "user_data": {
+            "verified": false,
+            "id": "1234567890987654321",
+            "location": "Paris, France",
+            "username": "jeanvoteur",
+            "name": "Jean Le Voteur",
+            "created_at": "2021-11-30T13:02:47.000Z"
+        }
+    }
+}

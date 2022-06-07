@@ -1,9 +1,6 @@
-# Training & Processing
 flask
 tweepy
 requests
-
-# Analysis & Classification
 emoji
 jupyter
 pandas
